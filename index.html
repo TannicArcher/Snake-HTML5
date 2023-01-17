@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Змейка</title>
+	<title>Змейка Archera</title>
 </head>
 	<body>
 		<canvas id="myCanvas" width="300" height="300" style="border:1px solid #d3d3d3;">
@@ -64,7 +64,7 @@ function doMove() {
 	ctx.fillText("Рост:"+(r.length - 2),10,10);
 	
 	if (check(r[0], 0) || r[0].x < 0 || r[0].x >= 30 || r[0].y < 0 || r[0].y >= 30) 
-		alert("Игра Кончила\nВы выросли на：" + (r.length - 2) + "как то так");
+		alert("Игра Кончила\nВы выросли на：" + (r.length - 2) + " как то так");
 
 
 	if((r.length-2)==10){
@@ -79,7 +79,7 @@ function doMove() {
 			ctx.font="20px Arial";
 			ctx.textBaseline="middle";
 			ctx.textAlign="center";
-			ctx.fillText("Следующий рост наверное:"+num,150,150);
+			ctx.fillText("Следующий рост наверное через:"+num,150,150);
 			num=--num<0?0:num;	
 		},1000);
 			setTimeout(function(){
@@ -105,7 +105,7 @@ function check(e, j) {
 }</script>
 
 <div style="text-align:center;">
-<p>Источник света(простите Света если обидел)Давид ты пи**р знай это:<a href="https://github.com/TannicArcher" target="_blank">Разработчик Змейки</a></p>
+<p>Источник света(прости Света если обидел)Давид ты пи**р знай это:<a href="https://github.com/TannicArcher" target="_blank">Разработчик Змейки</a></p>
 </div>
 	</body>
 
